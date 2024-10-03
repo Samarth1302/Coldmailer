@@ -1,15 +1,19 @@
 # Coldmailer
+
 Send Cold mails automatically through BullMQ, Redis, and JS.
 
 # Pre-requisites:-
+
 - Google App Password
 - Local Redis server
 - Windows sub-system for Linux (WSL)
 
 # Excel file format
-- Based on the columns of excel file name, email, company in service/excelService.js can be changed. Default format is skipping the first row (slice(1)...) and reading column B (row[1]) for name, column C (row[2]) for email and column E (row[4]) for company.  
+
+- Based on the columns of excel file name, email, company in service/excelService.js can be changed. Default format is skipping the first row (slice(1)...) and reading column A (row[0]) for name, column B (row[1]) for email and column C (row[2]) for company.
 
 # Steps
+
 1. Run **npm init**
 2. Run **npm i** in the terminal
 3. Change the content, subject, filename in service/emailService.js
