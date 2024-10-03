@@ -19,7 +19,7 @@ Send Cold mails automatically through BullMQ, Redis, and JS.
 3. Change the content, subject, filename in service/emailService.js
 4. Keep the excel file and resume in the root folder
 5. Give excel filename as the excel path in util/scheduler.js
-6. Create .env with **EMAIL_USER, EMAIL_PASS, REDIS_HOST=localhost, REDIS_PORT=6379**
+6. Fill .env with **EMAIL_USER: emailAddress, EMAIL_PASS: appPassword, REDIS_HOST=localhost, REDIS_PORT=6379 (default)**
 7. Give the resume fielname as resumePath in index.js
 8. Start Redis server locally in CMD/terminal -> **sudo service redis-server start** and -> **redis-server**
 9. In new terminal on VS code run **node util/scheduler.js**
